@@ -11,6 +11,7 @@ df['YearMonth'] = df['Order Date'].dt.to_period('M').astype(str)
 
 # Inicializar app
 app = dash.Dash(__name__)
+server = app.server
 app.title = "Dashboard Ventas - Grid 2x2"
 
 # Layout en 2 filas x 2 columnas
